@@ -1,0 +1,24 @@
+body {
+    padding: 20px;
+    background-color: rgb(186, 190, 202);
+}
+#addNoteBtn{
+    background-color: rgb(105, 197, 105);
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 25%;
+    min-height: 100px;
+    padding: 10px;
+    border: 2px solid #9afdaa;
+    border-radius: 5px; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
