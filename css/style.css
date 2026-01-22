@@ -11,7 +11,19 @@ body {
     cursor: pointer;
 }
 
+/* #readerNotes {
+    border-color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10%;
+} */
+
 textarea {
+    background-color: #9afdaa;
+    overflow-wrap: anywhere;
     width: 25%;
     min-height: 100px;
     padding: 10px;
@@ -20,5 +32,23 @@ textarea {
     font-family: Arial, sans-serif;
     font-size: 14px;
     resize: vertical;
+    margin-bottom: 10px;
+}
+
+#readerNotes {
+    display: flex;
+    flex-direction: column;
+}
+
+#readerNotes > div {
+    background-color: #9afdaa;
+    overflow-wrap: anywhere;
+    width: 25%;
+    min-height: 100px;
+    padding: 10px;
+    border: 2px solid #9afdaa;
+    border-radius: 5px; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
     margin-bottom: 10px;
 }

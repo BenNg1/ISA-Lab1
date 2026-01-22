@@ -17,6 +17,7 @@ class Writer {
     }
 
     addNote(id, content) {
+        // When you create a note, pass a callback to handle its removal
         const note = new Note(id, content, this.notesContainer, (id) => this.removeNote(id));
         this.notes.push(note);
         note.render();

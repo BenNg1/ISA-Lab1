@@ -8,11 +8,11 @@ class Reader {
         this.notesContainer.innerHTML = "";
 
         const notes = NoteStorage.loadNotes();
+
         notes.forEach(note => {
-            const p = document.createElement("p");
-            p.textContent = note.content;
-            p.className = "border p-2 mb-2";
-            this.notesContainer.appendChild(p);
+            const div = document.createElement("div");
+            div.textContent = note.content;
+            this.notesContainer.appendChild(div);
         });
 
         this.updateTimestamp();
@@ -29,6 +29,6 @@ class Reader {
     }
 }
 
-// Instantiate and start the reader
+// Create a reader object
 const reader = new Reader("readerNotes", "lastRetrieved");
 reader.startAutoRefresh(2000);
