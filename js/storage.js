@@ -2,6 +2,7 @@ class NoteStorage {
     static NOTES_KEY = "lab1_notes";
     static TIME_KEY = "lab1_last_saved";
 
+    // For the writer to build the notes array
     static saveNotes(noteArray) {
         const json = JSON.stringify(noteArray);
         localStorage.setItem(NoteStorage.NOTES_KEY, json);
@@ -11,6 +12,7 @@ class NoteStorage {
         return time;
     }
 
+    // For the reader to retrieve the array of notes
     static loadNotes() {
         const json = localStorage.getItem(NoteStorage.NOTES_KEY);
         if (!json) {
